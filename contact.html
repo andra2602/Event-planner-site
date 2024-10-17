@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andra's Enchantment Events</title>
+    <link  href="style.css" type="text/css" rel="stylesheet" media="(min-width:600px)">
+    <link  href="mic-style.css" type="text/css" rel="stylesheet" media="(max-width:600px)">
+</head>
+<body>
+    <div id="container">
+        <div id="left-section">
+                <div class="logo-container">
+                    <img src="images/logo2.png" alt="logo">
+                </div>
+            <footer>
+                    <p>Follow Us:</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/pagina-facebook" target="_blank"><img src="images/fb-logo.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/pagina-instagram" target="_blank"><img src="images/ig-logo.png" alt="Instagram"></a>
+                    </div>
+                    <p>Copyright 2024 © Andra's Enchantment Events.</p>
+            </footer>
+        </div>
+        <div id="right-section">
+            <nav>
+                <ul class="meniu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="org_even.html">ORGANIZARE EVENIMENTE</a>
+                        <ul class="submeniu">
+                            <li><a href="nunta.html">ORGANIZARE NUNTA</a></li>
+                            <li><a href="botez.html">ORGANIZARE BOTEZ</a></li>
+                            <li><a href="petreceri.html">PETRECERI PRIVATE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="concept.html">CONCEPT EVENIMENT</a></li>
+                    <li><a href="locatii.html">LOCATII</a></li>
+                    <li><a href="despre-noi.html">DESPRE NOI</a></li>
+                    <li><a href="contact.html" class="active">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </nav>
+            <br><br>
+            <div class="image-overlay">
+                <img src="images/ss.png" alt="alb-negru">
+                    <div class="overlay-text">
+                    <h2>CONTACT</h2>    
+                    </div>
+            </div>
+            <br>
+            <h2>Te rugam sa completezi formularul urmator cu cat mai multe detalii importante despre evenimentul tau!</h2>
+            <h3>Fii sigur ca vei completa corect campurile,iar echipa noastra va reveni cu un raspuns in maxim 48 ore.</h3>
+
+              <!-- Formular de contact -->
+            <div id="contact-form">
+                <h1>SOLICITA OFERTA</h1>
+                <form id="form">
+                    <label for="name">Nume:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefon">Telefon:</label>
+                    <input type="tel" id="telefon" name="telefon" required>
+                    
+                    <label for="event-type">Alegeti tipul evenimentului:</label>
+                    <select id="event-type" name="event-type" required>
+                        <option value="Nunta">Nunta</option>
+                        <option value="Botez">Botez</option>
+                        <option value="Petrecre">Petrecere privata</option>
+                        <option value="Alt">Alt tip de eveniment</option>
+                    </select>
+
+                    <label for="date">Data (daca ati ales):</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="location">Locatia (daca ati ales):</label>
+                    <input type="text" id="location" name="location">
+
+                    <label for="subject">Subiect:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    
+                    <label for="message">Mesaj:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit" class="button">Trimite</button>
+                </form>
+                <div id="form-message"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

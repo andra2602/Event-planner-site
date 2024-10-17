@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andra's Enchantment Events</title>
+    <link href="style.css" type="text/css" rel="stylesheet" media="(min-width:600px)">
+    <link href="mic-style.css" type="text/css" rel="stylesheet" media="(max-width:600px)">
+</head>
+<body>
+    <div id="container">
+        <div id="left-section">
+            <div class="logo-container">
+                <img src="images/logo2.png" alt="logo">
+            </div>
+            <footer>
+                <p>Follow Us:</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/pagina-facebook" target="_blank"><img src="images/fb-logo.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/pagina-instagram" target="_blank"><img src="images/ig-logo.png" alt="Instagram"></a>
+                </div>
+                <p>Copyright 2024 © Andra's Enchantment Events.</p>
+            </footer>
+        </div>
+        <div id="right-section">
+            <nav>
+                <ul class="meniu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="org_even.html">ORGANIZARE EVENIMENTE</a>
+                        <ul class="submeniu">
+                            <li><a href="nunta.html">ORGANIZARE NUNTA</a></li>
+                            <li><a href="botez.html">ORGANIZARE BOTEZ</a></li>
+                            <li><a href="petreceri.html">PETRECERI PRIVATE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="concept.html">CONCEPT EVENIMENT</a></li>
+                    <li><a href="locatii.html">LOCATII</a></li>
+                    <li><a href="despre-noi.html">DESPRE NOI</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html" class="active">LOGIN</a></li>
+                </ul>
+            </nav>
+
+            <div class="image-gallery-container">
+                <img src="images/login.jpg" alt="login">
+            </div>
+            <!-- Login Form -->
+            <div id="login-form">
+                <h2>Log In</h2>
+                <form id="loginForm" action="/login" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <button type="submit">Log In</button>
+                    <button id="logoutButton">Logout</button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

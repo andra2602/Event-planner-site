@@ -1,0 +1,389 @@
+/* mic-style.css */
+
+/* Resetăm marginile și padding-ul pentru întregul document */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Stilizează fundalul și fontul pentru întregul document */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+}
+
+/* Stilizează containerul principal */
+#container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Stilizează bara de navigare */
+nav {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Stilizează secțiunea din stânga */
+#left-section {
+    background-color: #000;
+    padding: 20px;
+}
+
+/* Stilizează subsolul */
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Stilizează secțiunea din dreapta */
+#right-section {
+    background-color: #fff;
+    padding: 20px;
+}
+#right-section p {
+    margin-top: 10px; /* Reducem margin-top-ul pentru a nu fi prea mare */
+    font-size: 16px; /* Reducem dimensiunea fontului pentru a se potrivi mai bine cu noul design */
+    font-weight: normal; /* Eliminăm greutatea fontului 600, dacă nu este necesară */
+}
+
+#right-section h1 {
+    color: #3b205d; /* Păstrăm culoarea originală */
+    font-size: 24px; /* Reducem dimensiunea fontului pentru a se potrivi mai bine cu noul design */
+    font-weight: bold; /* Adăugăm greutatea fontului bold */
+    margin-top: 10px; /* Reducem margin-top-ul pentru a nu fi prea mare */
+}
+
+
+/* Stilizează textul special */
+.special-text {
+    font-family: "Times New Roman", Times, serif; /* Modificăm font-family pentru a se potrivi cu restul designului */
+    font-style: italic; /* Păstrăm stilul italic */
+    font-size: 14px; /* Reducem dimensiunea fontului pentru a se potrivi mai bine cu noul design */
+}
+
+#right-section h1.special-text {
+    font-size: 20px; /* Reducem dimensiunea fontului pentru a se potrivi mai bine cu noul design */
+}
+
+#right-section h3.special-text {
+    font-size: 18px; /* Reducem dimensiunea fontului pentru a se potrivi mai bine cu noul design */
+}
+
+
+/* Stilizează butoanele */
+.button {
+    display: block;
+    background-color: #3b205d; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #7b57a8; /* Darker Green */
+}
+
+/* Stilizează secțiunile adiționale */
+.additional-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-overlay {
+    position: relative;
+}
+
+.image-overlay img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(67, 67, 67, 0.46); /* Opacitate redusă */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%; /* Ajustează lățimea textului */
+    max-width: 600px; /* Limitează lățimea maximă a textului */
+    padding: 20px; /* Adaugă un spațiu de margini pentru text */
+    z-index: 1;
+}
+
+.overlay-text h2 {
+    font-size: 20px; /* Reducem dimensiunea fontului pentru a se potrivi mai bine cu noul design */
+    margin-bottom: 5px; /* Reducem spațiul de la marginea de jos pentru a se potrivi mai bine cu noul design */
+}
+
+.overlay-text p {
+    font-size: 16px; /* Reducem dimensiunea fontului pentru a se potrivi mai bine cu noul design */
+}
+
+
+/* Stilizează link-urile din meniu */
+nav ul li a {
+    font-size: 16px;
+}
+
+/* Stilizează meniul pentru ecrane mai mici */
+nav ul li ul.submeniu {
+    display: none;
+}
+
+nav ul li:hover ul.submeniu {
+    display: block;
+}
+
+nav ul li ul.submeniu li {
+    margin: 5px 0;
+}
+
+nav ul li ul.submeniu li a {
+    font-size: 14px;
+}
+
+/* Stilizează containerul logo-ului */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Stilizează link-urile sociale */
+.social-icons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
+
+/* Stilizează link-ul de contact */
+.contact-link {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3b205d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.contact-link:hover {
+    background-color: #7b57a8;
+}
+
+/* Stilizează textul și link-urile din secțiunea de adițional */
+.additional-content p,.additional-content a {
+    text-align: center;
+}
+
+.additional-content .button {
+    margin: 10px auto;
+}
+
+.additional-content .button:hover {
+    background-color: #7b57a8;
+}
+
+/* Stilizează imaginile și textul din secțiunea de adițional */
+.additional-content .image-container {
+    margin-bottom: 30px;
+}
+
+.additional-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.additional-content p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+.flori-gallery {
+    text-align: center;
+    display: grid; /* Utilizăm CSS Grid pentru a poziționa imaginile */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajustează coloanele în funcție de lățimea imaginilor */
+    justify-items: center; /* Aliniază imaginile pe orizontală la centru */
+    align-items: center; /* Aliniază imaginile pe verticală la centru */
+    gap: 20px; /* Adaugă un spațiu între imaginile din grid */
+}
+
+.flori-gallery img {
+    width: 100%; /* Asigură că imaginile ocupă întreaga lățime a containerului */
+    max-width: 300px; /* Limitează lățimea maximă a imaginii pentru a nu depăși ecranul */
+    height: auto; /* Asigură păstrarea proporțiilor imaginii */
+    transition: transform 0.3s ease-in-out; /* Adaugă o tranziție lină la hover */
+}
+
+.flori-gallery img:hover {
+    transform: scale(1.1); /* Mărește mărimea imaginii la hover */
+}
+.image-animation {
+    display: block; /* Face imaginile vizibile */
+    max-width: 100%; /* Asigură că imaginile se vor încadra în lățimea disponibilă */
+    height: auto; /* Asigură aspectul proporțional al imaginilor */
+    margin: 10px auto; /* Centrează imaginile pe axa orizontală și adaugă spațiu în jurul lor */
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.image-gallery-container {
+    text-align: center;
+    display: grid; /* Utilizează CSS Grid */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajustează coloanele în funcție de lățimea imaginilor */
+    grid-gap: 10px; /* Adaugă un spațiu între imaginile din grid */
+    justify-content: center; /* Aliniere pe axa orizontală */
+}
+
+.image-gallery-concept {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajustează coloanele în funcție de lățimea imaginilor */
+    grid-gap: 10px; /* Adaugă un spațiu între imaginile din grid */
+}
+
+.image-item-concept {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-item-concept img {
+    width: 100%; /* Asigură că imaginile ocupă întreaga lățime a containerului */
+    height: auto; /* Asigură păstrarea proporțiilor imaginii */
+    transition: opacity 0.3s ease-in-out; /* Adaugă o tranziție lină pentru opacitate */
+}
+
+.image-item-concept:hover img {
+    opacity: 0.4; /* Redu opacitatea la hover */
+}
+.statica {
+    display: grid; /* Utilizăm CSS Grid */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajustează coloanele în funcție de lățimea imaginilor */
+    grid-gap: 5px; /* Adaugă un spațiu între imaginile din grid */
+}
+
+.statica > figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.statica > figure img {
+    width: 100%; /* Asigură că imaginile ocupă întreaga lățime a containerului */
+    height: 100%; /* Asigură că imaginile ocupă întreaga înălțime a containerului */
+    transition: opacity 0.3s ease-in-out; /* Adaugă o tranziție lină pentru opacitate */
+    animation-name: opacitate; /* Folosește animația pentru opacitate */
+    animation-duration: 3s; /* Setează durata animației la 3 secunde */
+    animation-fill-mode: forwards; /* Păstrează ultima valoare a animației după finalizare */
+}
+
+/* Setează întârzierile de animație pentru fiecare imagine */
+.statica > figure:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.statica > figure:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.statica > figure:nth-child(3) {
+    animation-delay: 5s;
+}
+
+/* La hover, mărește imaginea și schimbă z-index-ul */
+.statica > figure:hover {
+    transform: scale(1.4);
+    z-index: 10;
+}
+.back-to-top-button {
+    position: static; /* Elimină poziționarea fixă */
+    display: inline-block;
+    margin: 10px auto; /* Centrează butonul */
+    padding: 10px 20px;
+    background-color: #3b205d;
+    color: white;
+    text-decoration: none;
+    border-radius: 2.5px;
+  }
+  .back-to-top-button:hover {
+    background-color: #7b57a86f;
+    color: #3b205d;
+  }
+  .contact-link2 {
+    display: inline-block; /* Face link-ul să fie afișat pe un singur rând */
+    margin: 10px auto; /* Centrează link-ul */
+    background-color: #28084b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2.5px;
+    padding: 10px 20px;
+  }
+  .contact-link2:hover {
+    background-color: #7b57a86f;
+    color: #3b205d;
+  }
+/* Definim animația pentru opacitate */
+@keyframes opacitate {
+    0% { opacity: 0%; }
+    50% { opacity: 50%; }
+    100% { opacity: 100%; }
+}
+

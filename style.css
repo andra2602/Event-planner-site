@@ -1,0 +1,451 @@
+  body {
+    margin: 0px;
+    padding: 0px;
+}
+
+  #container {
+    display: grid; /* Utilizăm CSS Grid */
+    grid-template-columns: 1fr 2fr; /* Imparte pagina in doua coloane egale */
+    height: 100vh; /* Setează înălțimea containerului la înălțimea vizibilă a ecranului */
+}
+
+#left-section {
+  background-color: rgb(0, 0, 0); /* Culorează secțiunea din stânga în negru */
+  display: flex; /* Folosește Flexbox */
+  justify-content: center; /* Aliniază imaginea în centru pe axa orizontală */
+  align-items: center;  
+  height: 100%;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#left-section footer {
+  background-color: #00000013; /* Schimbă culoarea fundalului */
+  color: white; /* Schimbă culoarea textului */
+  padding: 20px; /* Adaugă spațiu în interiorul footer-ului */
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  text-align: center;
+}
+.social-icons {
+  margin-top: 10px; /* Adaugă spațiu între text și icon-uri */
+}
+
+.social-icons a {
+  margin: 0 10px; /* Adaugă spațiu între icon-uri */
+  display: inline-block; /* Face ca link-urile să fie afișate orizontal */
+}
+
+.social-icons img {
+  width: 30px; /* Lățimea imaginilor de icon-uri */
+  height: auto; /* Asigură aspect ratio-ul imaginilor */
+}
+
+.logo-container {
+  max-width: 100%; 
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+/* Stilizare pentru containerul logo-ului */
+.logo-container img {
+  max-width: 100%; 
+  height: auto;
+}
+
+#right-section {
+    background-color: white;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+#right-section p {
+  margin-top: 20px; 
+  font-size: 20px;
+  font-weight: 600;
+}
+#right-section h1{
+  color:#3b205d;
+}
+.special-text {
+  font-family: "Lucida Calligraphy", "Verdana", sans-serif; /* Se aplică un font caligrafic */
+  font-style: italic; /* Se aplică stilul italic */
+  font-size: 16px;
+}
+h1>.special-text{
+  font-family: "Lucida Calligraphy", "Verdana", sans-serif; /* Se aplică un font caligrafic */
+  font-style: italic; /* Se aplică stilul italic */
+  font-size: 26px;
+}
+h3>.special-text{
+  font-family: "Lucida Calligraphy", "Verdana", sans-serif; /* Se aplică un font caligrafic */
+  font-style: italic; /* Se aplică stilul italic */
+  font-size: 28px;
+}
+
+nav {
+  position: fixed;
+  top: 0; 
+  background-color: white; 
+  z-index: 1000; 
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 40px;
+  position: relative;
+}
+
+nav ul li:first-child {
+  margin-left: 30px; 
+}
+nav ul li:last-child {
+  margin-right: 0; 
+}
+nav ul li ul.submeniu {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  left: 0; 
+  background-color: white; 
+  padding: 10px; 
+  z-index: 1; 
+  text-align: left;
+}
+nav ul li:hover ul.submeniu {
+  display: block; 
+}
+nav ul li ul.submeniu li {
+  margin: 0; 
+}
+
+nav ul li ul.submeniu li a {
+  display: block; 
+  color: black;
+  text-decoration: none;
+  padding: 5px 0; 
+}
+
+nav ul li ul.submeniu li a:hover {
+  color: #7c7c7c;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px; 
+  font-family:'Times New Roman', Times, serif;
+}
+
+nav ul li a:hover {
+  color: #7c7c7c;
+}
+
+.image-overlay {
+  position: relative;
+}
+
+.image-overlay img {
+  max-width: 100%; 
+  height: auto; 
+  display: block;
+}
+
+.image-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(67, 67, 67, 0.46); /* Opacitate redusă */
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; 
+  width: 100%;
+  z-index: 1;
+}
+
+.overlay-text h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.overlay-text p {
+  font-size: 25px;
+}
+
+
+.contact-link {
+  display: inline-block; /* Face ca elementul de ancorare să fie un bloc pentru a ocupa întreaga lățime a imaginii */
+  text-align: center;
+  font-weight: 600;
+  font-size: 27px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px; /* Adaugă un spațiu între text și elementul de ancorare */
+}
+
+.contact-link:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+.additional-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; /* Ajustează margin-top pentru a separa de paragrafe */
+}
+
+.image-container {
+  text-align: center;
+  margin: 0 20px;
+  flex: 1;
+  max-width: 300px;
+}
+
+.image-container img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3b205d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.additional-content .button:hover {
+  background-color: #7b57a86f;
+  color: #3b205d;
+}
+
+.image-animation {
+  display: none; /* Inițial ascunde imaginile */
+  width: 700px;
+  height: auto;
+  margin: 10px;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.image-gallery-container {
+  display: flex;
+  justify-content: center; /* Aliniere pe axa orizontală */
+  align-items: center; /* Aliniere pe axa verticală */
+  flex-wrap: wrap; /* Asigură că imaginile sunt împachetate pe mai multe linii dacă sunt prea multe */
+}
+.flori-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.flori-gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.flori-gallery img:hover {
+  transform: scale(1.1);
+}
+ul>li{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.back-to-top-button {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #3b205d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+.back-to-top-button:hover {
+  background-color: #7b57a86f;
+  color: #3b205d;
+}
+.contact-link2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28084b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-link2:hover {
+  background-color: #7b57a86f;
+  color: #3b205d;
+}
+.overlay-text h2 {
+  font-size: 40px; 
+}
+
+
+.image-gallery-concept {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.image-item-concept {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-item-concept img {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-item-concept:hover img {
+  opacity: 0.4;
+}
+
+
+.statica{
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+	}
+.statica>figure{
+  position: relative;
+  overflow: hidden;
+	}
+  .statica > figure img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease-in-out;
+    animation-name: opacitate;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  }
+
+	.statica>figure:nth-child(1){
+		animation-delay: 1s;
+	}
+	.statica>figure:nth-child(2){
+		animation-delay: 3s;
+	}
+	.statica>figure:nth-child(3){
+		animation-delay: 5s;
+	}
+  .statica>figure:hover{
+		transform:scale(1.4);
+		z-index:10;
+	}
+
+  @keyframes opacitate {
+    0% {opacity: 0%;}
+    50% {opacity: 50%;}
+    100%{opacity: 100%;}
+  }
+	
+  #contact-form {
+    margin: 20px auto;
+    padding: 20px;  /* Padding intern pentru a crea spațiu în interiorul chenarului */
+    border: 2px solid #3b205d;  /* Grosimea și culoarea chenarului */
+    border-radius: 10px;  /* Colțuri rotunjite pentru chenar */
+    background-color: #f9f9f9;  /* Fundal deschis pentru contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Umbră pentru efect de adâncime */
+    max-width: 600px;  /* Lățimea maximă a chenarului */
+    width: 100%;  /* Asigură că formularul va ocupa întreaga lățime disponibilă până la max-width */
+    box-sizing: border-box;  /* Include padding și border în lățimea totală */
+  }
+
+#contact-form h3 {
+    color: #3b205d;
+    margin-bottom: 20px;
+    text-align: center;  /* Alinierea titlului la centru */
+}
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form form label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#contact-form form input,
+#contact-form form textarea,
+#contact-form form select  {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact-form form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b205d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact-form form button:hover {
+    background-color: #7855a2;
+}
+
+#form-message {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center; 
+}
+
+
+
+
+
