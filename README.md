@@ -1,3 +1,64 @@
+# Event Planner - Website for Event Planning
+
+## Description
+This project is a dynamic website for event planning, designed to simplify the exploration and management of various types of events.
+
+Users can easily navigate the site to view detailed information about available events and submit requests to organize their own events.
+
+Additionally, they can access information about the event planning team, explore the main types of events, and discover different themes and locations available for hosting them.
+
+The project was developed as part of the Web Techniques course.
+
+## Implemented Features
+- Viewing detailed information about available events.
+- The ability to submit requests for event organization.
+- Accessing information about the organizing team.
+- Exploring different types of events, themes, and available locations.
+- Interactivity through form validation and user feedback.
+
+## Technologies and Concepts Used
+- **_HTML_**: Structuring the website content, ensuring it is semantic and accessible.
+- **_CSS_**: Styling the pages and implementing a responsive design for an optimal experience across various devices.
+- **_JavaScript_**: Creating interactivity, dynamic content updates, form validation, and feedback mechanisms for users.
+- **_Node.js_**: Efficiently handling user requests and managing event data on the server.
+
+## How to Run the Project
+
+- Clone the GitHub repository:
+```bash
+git clone https://github.com/username/repo-name.git
+```
+- Install dependencies:
+After cloning the repository, navigate to the project directory:
+```bash
+cd repo-name
+```
+- Install Node.js dependencies using npm:
+```bash
+npm install
+```
+- Start the server:
+After installing the dependencies, start the server:
+```bash
+npm start
+```
+The website will be available at [http://localhost:3000](http://localhost:3000) in your browser.
+
+- Explore the website:
+Access the site and explore the available sections: event details, event planning request form, event planning team information, and more.
+
+### Example Features
+- **Event Viewing**: Users can browse a list of events, with details such as location, theme, and date.
+- **Event Planning Form**: Users can submit requests to organize their own events by filling out an online form.
+- **Feedback**: With each interaction on the site (e.g., submitting a form), users receive real-time feedback.
+
+
+
+___
+
+
+
+
 # Event Planner - Site web pentru planificarea evenimentelor
 ## Descriere
 Acest proiect reprezintă un site dinamic pentru planificarea evenimentelor, creat pentru a simplifica explorarea și gestionarea diverselor tipuri de evenimente. 
